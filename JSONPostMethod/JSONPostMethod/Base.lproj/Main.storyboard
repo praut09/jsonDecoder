@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JSONPostMethod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Et-ZG-Ip0">
+                                <rect key="frame" x="116" y="110" width="182" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="koN-c1-rTE"/>
+                                </constraints>
+                                <state key="normal" title="POST Request"/>
+                                <connections>
+                                    <action selector="btnPostCallTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naH-j7-jQa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9O-Qt-ktx">
+                                <rect key="frame" x="135" y="417" width="144" height="62"/>
+                                <state key="normal" title="GET Request"/>
+                                <connections>
+                                    <action selector="btnGet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fl7-E8-x43"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ow-8j-MbB">
+                                <rect key="frame" x="135" y="648" width="144" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="WqU-Pr-fLU"/>
+                                </constraints>
+                                <state key="normal" title="Get New Request"/>
+                                <connections>
+                                    <action selector="getNewApiResponseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yoM-S3-xeW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X9O-Qt-ktx" secondAttribute="bottom" constant="383" id="9yY-ar-eua"/>
+                            <constraint firstItem="2Ow-8j-MbB" firstAttribute="leading" secondItem="X9O-Qt-ktx" secondAttribute="leading" id="O9c-eQ-IdG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Ow-8j-MbB" secondAttribute="bottom" constant="152" id="Oae-pu-eMW"/>
+                            <constraint firstItem="9Et-ZG-Ip0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="QDJ-3X-n7o"/>
+                            <constraint firstItem="9Et-ZG-Ip0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="flJ-21-SqC"/>
+                            <constraint firstItem="9Et-ZG-Ip0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fvU-62-Nq5"/>
+                            <constraint firstItem="2Ow-8j-MbB" firstAttribute="trailing" secondItem="X9O-Qt-ktx" secondAttribute="trailing" id="i7V-IU-MnF"/>
+                            <constraint firstItem="X9O-Qt-ktx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iBi-I1-rRz"/>
+                            <constraint firstItem="X9O-Qt-ktx" firstAttribute="centerX" secondItem="9Et-ZG-Ip0" secondAttribute="centerX" id="p8A-8M-LWx"/>
+                            <constraint firstItem="X9O-Qt-ktx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="sZ9-0X-1cm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnPostCALL" destination="9Et-ZG-Ip0" id="A0S-wB-K9u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394.20289855072468" y="154.6875"/>
+        </scene>
+    </scenes>
+</document>
